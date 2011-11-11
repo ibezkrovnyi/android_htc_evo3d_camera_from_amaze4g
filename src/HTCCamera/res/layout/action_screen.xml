@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/action_screen" android:background="@drawable/common_sub_panel_navbar_opacity75" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateImageButton android:id="@id/action_screen_fourth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" />
+    <View android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.android.camera.rotate.RotateImageButton android:id="@id/action_screen_send" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.android.camera.rotate.RotateImageButton android:id="@id/action_screen_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.android.camera.rotate.RotateImageButton android:id="@id/action_screen_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cmd_bar_two_btn_margin" />
+</LinearLayout>

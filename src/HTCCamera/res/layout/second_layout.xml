@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/indicator_view" android:layout="@layout/indicator_layout" android:inflatedId="@id/indicator_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    <ViewStub android:id="@id/btn_switch_view" android:layout="@layout/btn_switch_layout" android:inflatedId="@id/btn_switch_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <ViewStub android:id="@id/zoom_view" android:layout="@layout/zoom_layout" android:inflatedId="@id/zoom_view_stub" android:layout_width="fill_parent" android:layout_height="@dimen/zoom_bar_touch_area" />
+    <ViewStub android:id="@id/remaining_view" android:layout="@layout/remaining_layout" android:inflatedId="@id/remaining_view_stub" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <ViewStub android:id="@id/self_portrait_hint_view" android:layout="@layout/self_portrait_hint_layout" android:inflatedId="@id/self_portrait_hint_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

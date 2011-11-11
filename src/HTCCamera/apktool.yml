@@ -1,0 +1,7 @@
+version: 1.4.1
+apkFileName: HTCCamera.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2

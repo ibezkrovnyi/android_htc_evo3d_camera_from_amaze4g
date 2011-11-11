@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.camera.widget.EffectCircle android:id="@id/effect_circle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/control_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginBottom="90.0px" android:layout_alignParentBottom="true">
+        <SeekBar android:id="@id/seek" android:background="@drawable/zoom_track" android:paddingLeft="18.0px" android:paddingRight="18.0px" android:layout_width="412.0px" android:layout_height="18.0px" android:thumb="@drawable/zoom_indicator" android:layout_centerInParent="true" />
+        <com.android.camera.rotate.RotateImageView android:id="@id/dec" android:layout_width="30.0px" android:layout_height="30.0px" android:layout_marginTop="25.0px" android:src="@drawable/icon_effect_bar_down" android:layout_alignParentLeft="true" />
+        <com.android.camera.rotate.RotateImageView android:id="@id/add" android:layout_width="30.0px" android:layout_height="30.0px" android:layout_marginTop="25.0px" android:src="@drawable/icon_effect_bar_up" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/less_effect" android:visibility="gone" android:layout_width="70.0px" android:layout_height="70.0px" android:layout_marginLeft="107.0px" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <View android:id="@id/more_effect" android:visibility="gone" android:layout_width="70.0px" android:layout_height="70.0px" android:layout_marginRight="63.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateLinearLayout android:id="@id/rotate_indicator_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ViewStub android:id="@id/camera_indicator_view" android:layout="@layout/camera_indicator_layout" android:inflatedId="@id/camera_indicator_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/camcorder_indicator_view" android:layout="@layout/camcorder_indicator_layout" android:inflatedId="@id/camcorder_indicator_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.android.camera.rotate.RotateLinearLayout>
+</RelativeLayout>

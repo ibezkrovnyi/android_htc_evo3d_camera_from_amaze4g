@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/zoom_bar_height">
+        <com.android.camera.rotate.RotateImageView android:id="@id/zoom_bar_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_zoom_bar_out" android:layout_weight="1.0" />
+        <com.android.camera.widget.ZoomBar android:id="@id/zoom_bar_track" android:background="@drawable/zoom_track" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zoom_indicator" android:layout_weight="0.0" />
+        <com.android.camera.rotate.RotateImageView android:id="@id/zoom_bar_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_zoom_bar_in" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

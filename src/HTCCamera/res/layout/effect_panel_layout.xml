@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.widget.Panel android:layout_gravity="center" android:id="@id/effectPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" panel:position="top" panel:handle="@id/ImageView01" panel:content="@id/LinearLayout02"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:panel="http://schemas.android.com/apk/res/com.android.camera">
+    <RelativeLayout android:id="@id/LinearLayout02" android:background="@drawable/effect_menu_panel" android:paddingTop="@dimen/effect_list_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/effect_list_layout_height">
+        <com.android.camera.rotate.RotateLinearLayout android:id="@id/effect_list_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ListView android:id="@id/effect_list" android:scrollbars="none" android:layout_width="@dimen/effect_item_width" android:layout_height="wrap_content" android:cacheColorHint="#00000000" />
+        </com.android.camera.rotate.RotateLinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/ImageView01" android:layout_width="fill_parent" android:layout_height="0.0px" />
+</com.android.camera.widget.Panel>

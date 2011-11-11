@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/extension_menu_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/main_bar_view" android:layout="@layout/main_bar_layout" android:inflatedId="@id/main_bar_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/onscreen_camera_switch_button_container" android:visibility="invisible" android:layout_width="@dimen/onscreen_camera_switch_button_width" android:layout_height="@dimen/onscreen_camera_switch_button_height" android:layout_marginLeft="@dimen/onscreen_camera_switch_button_left_port" android:layout_marginTop="@dimen/onscreen_camera_switch_button_top_port">
+        <Button android:id="@id/onscreen_camera_switch_button" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/onscreen_camera_switch_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerInParent="true" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/receiver_onscreen_camera_switch_button_container" android:layout_width="@dimen/onscreen_camera_switch_button_receiver_width" android:layout_height="@dimen/onscreen_camera_switch_button_receiver_height" android:layout_marginLeft="@dimen/onscreen_camera_switch_button_receiver_left_port" android:layout_marginTop="@dimen/onscreen_camera_switch_button_receiver_top_port" />
+    <ViewStub android:id="@id/btn_thumbnail_view" android:layout="@layout/btn_thumbnail_layout" android:inflatedId="@id/btn_thumbnail_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/fps_view" android:layout="@layout/fps_layout" android:inflatedId="@id/fps_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/effect_panel_view" android:layout="@layout/effect_panel_layout" android:inflatedId="@id/effect_panel_view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_init_toast" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="840.0px" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_capture" />
+            <TextView android:id="@id/panorama_init_toast_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/how_to_start_panorama_ds" style="@com.htc:style/info_primary_s" />
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/panorama_shutter_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/capture_btn_background" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/panorama_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="229.0px" android:layout_marginBottom="6.0px" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/panorama_thumb_bar" android:background="@drawable/camera_panorama_preview_background" android:visibility="invisible" android:layout_width="124.0px" android:layout_height="502.0px" android:layout_marginTop="229.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/panorama_thumb" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+        <com.android.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_marginBottom="@dimen/panorama_thumb_arrow_margin" android:layout_above="@id/panorama_thumb">
+            <ImageView android:id="@id/panorama_left_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panorama_left_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+        <com.android.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_marginTop="@dimen/panorama_thumb_arrow_margin" android:layout_below="@id/panorama_thumb">
+            <ImageView android:id="@id/panorama_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panorama_right_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+    </RelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_review_image_container" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/panorama_review_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>
