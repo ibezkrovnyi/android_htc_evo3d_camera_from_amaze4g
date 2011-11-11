@@ -17,7 +17,7 @@
 
     const-string v0, "PowerWarning Controller"
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     invoke-direct {p0, v0, v1, p1}, Lcom/android/camera/component/CameraThreadComponent;-><init>(Ljava/lang/String;ZLcom/android/camera/CameraThread;)V
 
@@ -43,7 +43,7 @@
 .method public static final isSupported()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method

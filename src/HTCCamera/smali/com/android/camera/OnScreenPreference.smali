@@ -9605,79 +9605,116 @@
 
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mCameraThread:Lcom/android/camera/CameraThread;
 
+    .line 100
     if-eqz v1, :cond_0
 
+    .line 101
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mCameraThread:Lcom/android/camera/CameraThread;
 
+    .line 102
     iget v1, v1, Lcom/android/camera/CameraThread;->mMode:I
 
+    .line 103
     if-ne v1, v4, :cond_1
 
+    .line 104
     :cond_0
     :goto_0
     return-void
 
+    .line 105
     :cond_1
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mBlinkDetectionPref:Landroid/preference/CheckBoxPreference;
 
+    .line 106
     if-eqz v1, :cond_0
 
+    .line 107
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mHTCCamera:Lcom/android/camera/HTCCamera;
 
+    .line 108
     if-eqz v1, :cond_0
 
+    .line 109
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mScreen:Landroid/preference/PreferenceScreen;
 
+    .line 110
     const-string v2, "pref_face_detection"
 
+    .line 111
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
+    .line 112
     move-result-object v0
 
+    .line 113
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
+    if-eqz v0, :cond_0
+
+    .line 114
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
+    .line 115
     move-result v1
 
+    .line 116
     if-eqz v1, :cond_2
 
+    .line 117
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mHTCCamera:Lcom/android/camera/HTCCamera;
 
+    .line 118
     invoke-virtual {v1}, Lcom/android/camera/HTCCamera;->hasSpecificEffect()Z
 
+    .line 119
     move-result v1
 
+    .line 120
     if-nez v1, :cond_2
 
+    .line 121
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mBlinkDetectionPref:Landroid/preference/CheckBoxPreference;
 
+    .line 122
     invoke-virtual {v1, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
+    .line 123
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mBlinkDetectionPref:Landroid/preference/CheckBoxPreference;
 
+    .line 124
     iget-boolean v2, p0, Lcom/android/camera/OnScreenPreference;->bBlinkDetection:Z
 
+    .line 125
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
+    .line 126
     :goto_1
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mCameraHandler:Landroid/os/Handler;
 
+    .line 127
     const/16 v2, 0x3c
 
+    .line 128
     invoke-static {v1, v2}, Lcom/android/camera/MessageHandler;->sendEmptyMessage(Landroid/os/Handler;I)V
 
+    .line 129
     goto :goto_0
 
+    .line 130
     :cond_2
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mBlinkDetectionPref:Landroid/preference/CheckBoxPreference;
 
+    .line 131
     invoke-virtual {v1, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
+    .line 132
     iget-object v1, p0, Lcom/android/camera/OnScreenPreference;->mBlinkDetectionPref:Landroid/preference/CheckBoxPreference;
 
+    .line 133
     invoke-virtual {v1, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
+    .line 134
     goto :goto_1
 .end method
 
@@ -9919,6 +9956,8 @@
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
+
+    if-eqz v0, :cond_0
 
     if-eqz v1, :cond_2
 

@@ -1824,11 +1824,72 @@
 .end method
 
 .method static synthetic access$11302(Lcom/android/camera/HTCCamera;I)I
-    .locals 0
+    .locals 3
 
+    if-nez p1, :cond_0
+
+    const-string v1, "pref_camera_scene_ds"
+
+    invoke-static {p0, v1}, Lcom/android/camera/HTCCameraAdvanceSetting;->getPrefenceValue(Landroid/app/Activity;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    const-string v1, "null"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    :goto_0
+    invoke-virtual {p0, v0}, Lcom/android/camera/HTCCamera;->mapSceneNumToSelector(I)I
+
+    move-result v0
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_2
+
+    const/16 v1, 0x8
+
+    if-eq v0, v1, :cond_2
+
+    :cond_0
+    :goto_1
     iput p1, p0, Lcom/android/camera/HTCCamera;->m3DButtonStatus:I
 
     return p1
+
+    :cond_1
+    const v0, 0x0
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/android/camera/HTCCamera;->mapSceneNumFromSelector(I)I
+
+    move-result v0
+
+    const-string v1, "pref_camera_scene_ds"
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {p0, v1, v2}, Lcom/android/camera/HTCCameraAdvanceSetting;->writePreference(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Object;)Z
+
+    invoke-direct {p0, v0}, Lcom/android/camera/HTCCamera;->doAfterSceneSelect(I)V
+
+    goto :goto_1
 .end method
 
 .method static synthetic access$11400(Lcom/android/camera/HTCCamera;)V
@@ -21226,12 +21287,13 @@
 
     invoke-static {v4, v1}, Lcom/android/camera/LOG;->W(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eq p2, v3, :cond_0
+    if-eq p2, v3, :cond_1
 
+    :cond_0
     :goto_0
     return-void
 
-    :cond_0
+    :cond_1
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
@@ -21257,6 +21319,27 @@
 
     move-result v0
 
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_0
+
+    const/4 v1, 0x4
+
+    if-eq v0, v1, :cond_0
+
+    iget v1, p0, Lcom/android/camera/HTCCamera;->m3DButtonStatus:I
+
+    if-nez v1, :cond_2
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_0
+
+    const/16 v1, 0x8
+
+    if-eq v0, v1, :cond_0
+
+    :cond_2
     const-string v1, "HTCCamera"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -21287,7 +21370,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_1
+    if-nez v1, :cond_3
 
     const-string v1, "pref_camera_scene_ds"
 
@@ -21302,7 +21385,7 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_3
     const-string v1, "pref_camera_scene_service_ds"
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -21312,6 +21395,8 @@
     invoke-static {p0, v1, v2}, Lcom/android/camera/HTCCameraAdvanceSetting;->writePreference(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Object;)Z
 
     goto :goto_1
+
+    nop
 
     nop
 
@@ -26641,8 +26726,11 @@
 
     iget-boolean v1, p0, Lcom/android/camera/HTCCamera;->keep_backgroundDataSetting:Z
 
+    goto :goto_0
+
     invoke-virtual {v0, v1}, Landroid/net/ConnectivityManager;->setBackgroundDataSetting(Z)V
 
+    :goto_0
     const-string v0, "HTCCamera"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -27155,8 +27243,11 @@
 
     iget-object v0, p0, Lcom/android/camera/HTCCamera;->connManager:Landroid/net/ConnectivityManager;
 
+    goto :goto_0
+
     invoke-virtual {v0, p1}, Landroid/net/ConnectivityManager;->setBackgroundDataSetting(Z)V
 
+    :goto_0
     const-string v0, "HTCCamera"
 
     new-instance v1, Ljava/lang/StringBuilder;

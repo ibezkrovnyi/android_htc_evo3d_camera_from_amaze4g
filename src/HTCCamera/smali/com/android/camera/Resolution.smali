@@ -1017,9 +1017,9 @@
 
     new-instance v0, Lcom/android/camera/Resolution;
 
-    const/16 v1, 0x780
+    const/16 v1, 0x800
 
-    const/16 v2, 0x438
+    const/16 v2, 0x480
 
     const v3, 0x7f0a00e5
 

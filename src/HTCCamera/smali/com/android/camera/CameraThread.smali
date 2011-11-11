@@ -480,7 +480,7 @@
 
     iput-object v2, p0, Lcom/android/camera/CameraThread;->mCurrentResolution:Lcom/android/camera/Resolution;
 
-    const/16 v0, 0x55
+    const/16 v0, 0x64
 
     iput v0, p0, Lcom/android/camera/CameraThread;->mJPEGQuality:I
 
@@ -2699,6 +2699,8 @@
     move/from16 v0, v18
 
     move-object/from16 v1, p0
+
+    const/16 v0, 0x64
 
     iput v0, v1, Lcom/android/camera/CameraThread;->mJPEGQuality:I
 

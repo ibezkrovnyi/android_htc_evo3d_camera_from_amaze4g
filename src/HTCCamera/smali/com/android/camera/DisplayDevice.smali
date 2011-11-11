@@ -884,7 +884,7 @@
 .method public static support3DCamera()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -892,7 +892,7 @@
 .method public static support3DHWSwitch()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -1123,7 +1123,7 @@
 .method public static supportISO1250()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -1235,7 +1235,7 @@
 .method public static supportSharpSensor()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -1243,7 +1243,7 @@
 .method public static supportSharpSensorResolution()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -1356,7 +1356,7 @@
 .method public static supportTapScreenCapture()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method

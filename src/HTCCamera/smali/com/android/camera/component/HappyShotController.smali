@@ -394,7 +394,7 @@
 .end method
 
 .method private onEnterHappyShotMode(J)V
-    .locals 3
+    .locals 4
 
     const/4 v1, 0x1
 
@@ -431,7 +431,7 @@
 .end method
 
 .method private onExitHappyShotMode()V
-    .locals 4
+    .locals 5
 
     invoke-virtual {p0}, Lcom/android/camera/component/HappyShotController;->getCameraThread()Lcom/android/camera/CameraThread;
 

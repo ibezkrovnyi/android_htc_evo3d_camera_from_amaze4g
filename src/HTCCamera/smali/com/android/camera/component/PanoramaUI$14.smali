@@ -73,7 +73,7 @@
 
     move-result-object v3
 
-    const-string v4, "com.htc.album.action.VIEW_PANORAMA_SHOTS"
+    const-string v4, "com.htc.album.action.VIEW_PHOTO_FROM_CAMERA"
 
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
