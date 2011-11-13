@@ -1,0 +1,19 @@
+#Updater Script - made by leedroid - edited by Igor Bezkrovny 
+
+show_progress(0.500000, 0);
+
+#include "defs.h"
+ui_print(VERSION_TEXT);
+
+show_progress(0.500000, 40);
+
+ui_print("-Writing Patch");
+run_program("/sbin/busybox", "mount", "/system");
+package_extract_dir("system", "/system");
+set_perm_recursive(0, 0, 0755, 0644, "/system/lib");
+delete("/system/app/HTCCamera.odex");
+show_progress(0.400000, 0);
+ui_print("-Formatting Cache");
+unmount("/system");
+show_progress(0.100000, 0);
+ui_print("-Done");
