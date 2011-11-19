@@ -7,13 +7,24 @@ ui_print(VERSION_TEXT);
 
 show_progress(0.500000, 40);
 
-ui_print("-Writing Patch");
+ui_print("Mounting partitions...");
 run_program("/sbin/busybox", "mount", "/system");
+run_program("/sbin/busybox", "mount", "/data");
+run_program("/sbin/busybox", "mount", "/cache");
+
+ui_print("Writing Amaze Camera...");
 package_extract_dir("system", "/system");
 set_perm_recursive(0, 0, 0755, 0644, "/system/lib");
 delete("/system/app/HTCCamera.odex");
 show_progress(0.400000, 0);
-ui_print("-Formatting Cache");
+
+ui_print("Clearing Cache & Dalvik-Cache...");
+
+delete_recursive("/data/dalvik-cache");
+delete_recursive("/cache");
+
 unmount("/system");
+unmount("/cache");
+unmount("/data");
 show_progress(0.100000, 0);
-ui_print("-Done");
+ui_print("Done");

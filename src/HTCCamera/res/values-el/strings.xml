@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Κάμερα</string>
-    <string name="camcorder_name">Εγγρ. Βίντεο</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Καθρέφτης</string>
+    <string name="htc_private_app">Amaze Κάμερα</string>
+    <string name="camcorder_name">Amaze Εγγρ. Βίντεο</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Καθρέφτης</string>
     <string name="wait">Παρακαλώ περιμένετε…</string>
     <string name="no_storage">Παρακαλώ εισάγετε μια κάρτα SD πριν να χρησιμοποιήσετε την κάμερα.</string>
     <string name="no_storage_camcorder">Παρακαλούμε εισαγάγετε μια κάρτα SD πριν χρησιμοποιήσετε τη συσκευή εγγραφής βίντεο.</string>

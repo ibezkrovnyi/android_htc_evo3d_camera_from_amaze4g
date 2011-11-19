@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">相机</string>
-    <string name="camcorder_name">摄像机</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">镜像</string>
+    <string name="htc_private_app">Amaze 相机</string>
+    <string name="camcorder_name">Amaze 摄像机</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze 镜像</string>
     <string name="wait">请稍候…</string>
     <string name="no_storage">使用相机前请先插入存储卡。</string>
     <string name="no_storage_camcorder">使用摄像机前请先插入存储卡。</string>

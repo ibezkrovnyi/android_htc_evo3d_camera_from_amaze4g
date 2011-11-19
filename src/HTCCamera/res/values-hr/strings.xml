@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Fotoaparat</string>
-    <string name="camcorder_name">Kamera</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Ogledalo</string>
+    <string name="htc_private_app">Amaze Fotoaparat</string>
+    <string name="camcorder_name">Amaze Kamera</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Ogledalo</string>
     <string name="wait">Pričekajte…</string>
     <string name="no_storage">Umetnite SD karticu prije uporabe fotoaparata.</string>
     <string name="no_storage_camcorder">Umetnite SD karticu prije uporabe kamere.</string>

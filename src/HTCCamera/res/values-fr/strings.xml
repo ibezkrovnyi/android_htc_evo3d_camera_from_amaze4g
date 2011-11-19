@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Appareil photo</string>
-    <string name="camcorder_name">Caméscope</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Miroir</string>
+    <string name="htc_private_app">Amaze Appareil photo</string>
+    <string name="camcorder_name">Amaze Caméscope</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Miroir</string>
     <string name="wait">Veuillez patienter…</string>
     <string name="no_storage">"Veuillez insérer une carte SD avant d'utiliser l'appareil photo."</string>
     <string name="no_storage_camcorder">"Veuillez insérer une carte SD avant d'utiliser le caméscope."</string>

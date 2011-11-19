@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Kamera</string>
-    <string name="camcorder_name">Videokamera</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Tükör</string>
+    <string name="htc_private_app">Amaze Kamera</string>
+    <string name="camcorder_name">Amaze Videokamera</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Tükör</string>
     <string name="wait">Kérjük, várjon…</string>
     <string name="no_storage">Kérjük, helyezzen be egy SD kártyát a kamera használata előtt.</string>
     <string name="no_storage_camcorder">Kérjük, helyezzen be egy SD kártyát a videokamera használata előtt.</string>

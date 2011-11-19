@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">กล้อง</string>
-    <string name="camcorder_name">กล้องวิดีโอ</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">กระจกส่อง</string>
+    <string name="htc_private_app">Amaze กล้อง</string>
+    <string name="camcorder_name">Amaze กล้องวิดีโอ</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze กระจกส่อง</string>
     <string name="wait">โปรดรอ…</string>
     <string name="no_storage">กรุณาใส่ SD Card ก่อนใช้กล้อง</string>
     <string name="no_storage_camcorder">กรุณาใส่ SD Card ก่อนใช้กล้องวิดีโอ</string>

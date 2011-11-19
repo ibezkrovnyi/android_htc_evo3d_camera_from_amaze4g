@@ -32,10 +32,10 @@
     <string name="custom_res_mirror_dark_icon">dark_mirror_icon</string>
     <string name="custom_res_scene_frame_pressed">scene_frame_pressed</string>
     <string name="camera_demo_video">http://m.youtube.com/view_playlist?p=B0AEC09DCEEC2071</string>
-    <string name="htc_private_app">Camera</string>
-    <string name="camcorder_name">Camcorder</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Mirror</string>
+    <string name="htc_private_app">Amaze Camera</string>
+    <string name="camcorder_name">Amaze Camcorder</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Mirror</string>
     <string name="wait">Please wait…</string>
     <string name="no_storage">Please insert an SD card before using the camera.</string>
     <string name="no_storage_camcorder">Please insert an SD card before using the camcorder.</string>
@@ -400,11 +400,12 @@
     <string name="scene_description_lowlight">Use in <b>low light</b> for hand held photos with no flash that are more natural looking.</string>
     <string name="scene_description_manual">Enables you to modify advanced settings. Press menu key to open settings.</string>
     <string name="power_warning_msg">3D camera is not available due to low battery power. Please charge your phone or switch to 2D camera.</string>
-    <string name="camera_page_title">Camera</string>
+#include "defs.h"
+    <string name="camera_page_title">VERSION_TEXT</string>
     <string name="camera_tutorial_text">Learn more about the advanced camera features.</string>
     <string name="done_btn_label">Done</string>
     <string name="demo_btn_label">Demo video</string>
     <string name="camera_tutorial_item">Tutorial</string>
     <string name="ap_version_id">3.00.0001</string>
-    <string name="bitrate">1080p video bitrate</string>
+    <string name="bitrate">720p video bitrate</string>
 </resources>

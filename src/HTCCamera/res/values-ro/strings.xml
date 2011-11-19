@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Aparat foto</string>
-    <string name="camcorder_name">Cameră video</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Oglindă</string>
+    <string name="htc_private_app">Amaze Aparat foto</string>
+    <string name="camcorder_name">Amaze Cameră video</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Oglindă</string>
     <string name="wait">Aşteaptă…</string>
     <string name="no_storage">Introdu un card SD înainte de a folosi aparatul foto.</string>
     <string name="no_storage_camcorder">Introdu un card SD înainte de a folosi camera video.</string>

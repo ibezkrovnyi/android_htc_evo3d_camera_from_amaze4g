@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Câmara</string>
-    <string name="camcorder_name">Câmara de filmar</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Espelho</string>
+    <string name="htc_private_app">Amaze Câmara</string>
+    <string name="camcorder_name">Amaze Câmara de filmar</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Espelho</string>
     <string name="wait">Aguarde…</string>
     <string name="no_storage">Introduza um cartão SD antes de utilizar a câmara.</string>
     <string name="no_storage_camcorder">Intoduza um cartão SD antes de utilizar a câmara de filmar</string>

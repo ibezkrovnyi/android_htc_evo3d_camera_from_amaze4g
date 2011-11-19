@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">カメラ</string>
-    <string name="camcorder_name">"ビデオ
+    <string name="htc_private_app">Amaze カメラ</string>
+    <string name="camcorder_name">Amaze "ビデオ
 カメラ"</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">ミラー</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze ミラー</string>
     <string name="wait">お待ちください…</string>
     <string name="no_storage">カメラを使用する前に SD カードを挿入してください。</string>
     <string name="no_storage_camcorder">ビデオを使用する前に SD カードを挿入してください。</string>

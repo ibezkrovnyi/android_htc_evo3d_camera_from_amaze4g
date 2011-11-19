@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">相機</string>
-    <string name="camcorder_name">攝錄影機</string>
+    <string name="htc_private_app">Amaze 相機</string>
+    <string name="camcorder_name">Amaze 攝錄影機</string>
     <string name="wait">請稍候…</string>
     <string name="no_storage">請先插入 SD 卡再使用相機。</string>
     <string name="no_storage_camcorder">請先插入 SD 卡再使用攝錄影機。</string>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="htc_private_app">Máy ảnh</string>
-    <string name="camcorder_name">Máy quay phim</string>
-    <string name="snapbooth_name">Snapbooth</string>
-    <string name="mirror_name">Gương</string>
+    <string name="htc_private_app">Amaze Máy ảnh</string>
+    <string name="camcorder_name">Amaze Máy quay phim</string>
+    <string name="snapbooth_name">Amaze Snapbooth</string>
+    <string name="mirror_name">Amaze Gương</string>
     <string name="wait">Vui lòng đợi…</string>
     <string name="no_storage">Vui lòng lắp thẻ nhớ trước khi sử dụng Máy ảnh.</string>
     <string name="no_storage_camcorder">Vui lòng lắp thẻ nhớ trước khi sử dụng Máy quay phim.</string>
