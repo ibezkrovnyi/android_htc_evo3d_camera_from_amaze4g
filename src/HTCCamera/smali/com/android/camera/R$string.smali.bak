@@ -963,8 +963,6 @@
 
 .field public static final zoom_hint_actionkey:I = 0x7f0a01da
 
-.field public static final pref_video_format_title:I = 0x7f0a01dd
-
 .field public static final zoom_hint_screen:I = 0x7f0a01d8
 
 .field public static final zoom_hint_trackball:I = 0x7f0a01d9

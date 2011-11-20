@@ -1418,6 +1418,7 @@
     <public type="string" name="zoom_hint_screen" id="0x7f0a01d8" />
     <public type="string" name="zoom_hint_trackball" id="0x7f0a01d9" />
     <public type="string" name="zoom_hint_actionkey" id="0x7f0a01da" />
+    <public type="string" name="pref_video_format_title" id="0x7f0a01dd" />
     <public type="dimen" name="tumbler_base_height" id="0x7f0b0000" />
     <public type="dimen" name="tumbler_base_width" id="0x7f0b0001" />
     <public type="dimen" name="title_space" id="0x7f0b0002" />

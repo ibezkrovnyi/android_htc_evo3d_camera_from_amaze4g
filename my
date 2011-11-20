@@ -1,0 +1,280 @@
+possible solution, but now is not needed
+
+.method private stop_video_recording_delay()V
+    .locals 20
+
+    const-string v4, "CameraThread"
+
+    const-string v5, "stop_video_recording_delay start"
+
+    invoke-static {v4, v5}, Lcom/android/amaze_camera/LOG;->V(Ljava/lang/String;Ljava/lang/String;)V
+
+    :try_start_0
+    const-string v15, "video/3gpp"
+
+    invoke-static {}, Lcom/android/amaze_camera/DisplayDevice;->supportOnlyMP4VideoFormat()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-direct/range {p0 .. p0}, Lcom/android/amaze_camera/CameraThread;->isMMSRecording()Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    const-string v15, "video/mp4"
+
+    :cond_0
+    invoke-virtual/range {p0 .. p0}, Lcom/android/amaze_camera/CameraThread;->is3DMode()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    move-object/from16 v0, p0
+
+    iget-boolean v0, v0, Lcom/android/amaze_camera/CameraThread;->bSwitchCamera:Z
+
+    move v4, v0
+
+    if-nez v4, :cond_1
+
+    const-string v15, "video/mp4-3d"
+
+    goto :cond_100
+
+    :cond_1
+    const-string v1, "pref_camera_video_file_format"
+    move-object/from16 v0, p0
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mCameraActivity:Lcom/android/amaze_camera/HTCCamera;
+    invoke-static {v0, v1}, Lcom/android/amaze_camera/HTCCameraAdvanceSetting;->getPrefenceValue(Landroid/app/Activity;Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
+
+    const-string v2, "video/"
+    const-string v0, "CameraThread"
+    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+    const-string v1, "CameraThread"
+    invoke-static {v1, v15}, Lcom/android/amaze_camera/LOG;->V(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_100
+    const/4 v4, 0x1
+
+    invoke-static {v4}, Lcom/android/amaze_camera/DCFRuler$StorageCardControl;->setURIType(I)V
+
+    invoke-static {}, Lcom/android/amaze_camera/ImageManager;->instance()Lcom/android/amaze_camera/ImageManager;
+
+    move-result-object v4
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mCameraActivity:Lcom/android/amaze_camera/HTCCamera;
+
+    move-object v5, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mCameraActivity:Lcom/android/amaze_camera/HTCCamera;
+
+    move-object v6, v0
+
+    invoke-virtual {v6}, Lcom/android/amaze_camera/HTCCamera;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v6
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mfilename:Ljava/lang/String;
+
+    move-object v7, v0
+
+    invoke-static {v7}, Lcom/android/amaze_camera/DCFRuler;->getFileNameWithoutExtension(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v8, ""
+
+    move-object/from16 v0, p0
+
+    iget-wide v0, v0, Lcom/android/amaze_camera/CameraThread;->mStartRecordingTime:J
+
+    move-wide v9, v0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mfilepath:Ljava/lang/String;
+
+    move-object v13, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mfilename:Ljava/lang/String;
+
+    move-object v14, v0
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mCameraActivity:Lcom/android/amaze_camera/HTCCamera;
+
+    move-object/from16 v16, v0
+
+    invoke-virtual/range {v16 .. v16}, Lcom/android/amaze_camera/HTCCamera;->getRecordMS()J
+
+    move-result-wide v16
+
+    invoke-virtual/range {v4 .. v17}, Lcom/android/amaze_camera/ImageManager;->addVideo(Landroid/content/Context;Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;JLandroid/location/Location;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Landroid/net/Uri;
+
+    move-result-object v4
+
+    sput-object v4, Lcom/android/amaze_camera/CameraThread;->mLastContentUri:Landroid/net/Uri;
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mCameraActivity:Lcom/android/amaze_camera/HTCCamera;
+
+    move-object v4, v0
+
+    invoke-virtual {v4}, Lcom/android/amaze_camera/HTCCamera;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    sget-object v5, Lcom/android/amaze_camera/CameraThread;->mLastContentUri:Landroid/net/Uri;
+
+    invoke-static {v4, v5}, Lcom/android/amaze_camera/ImageManager;->setVideoSize(Landroid/content/ContentResolver;Landroid/net/Uri;)V
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mfilepath:Ljava/lang/String;
+
+    move-object v5, v0
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string v5, "/"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->mfilename:Ljava/lang/String;
+
+    move-object v5, v0
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v19
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->m_EventManager:Lcom/android/amaze_camera/EventManager;
+
+    move-object v4, v0
+
+    new-instance v5, Lcom/android/amaze_camera/VideoSavedEvent;
+
+    const-string v6, "Media.Saved"
+
+    sget-object v7, Lcom/android/amaze_camera/CameraThread;->mLastContentUri:Landroid/net/Uri;
+
+    move-object v0, v5
+
+    move-object v1, v6
+
+    move-object v2, v7
+
+    move-object/from16 v3, v19
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/amaze_camera/VideoSavedEvent;-><init>(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;)V
+
+    invoke-virtual {v4, v5}, Lcom/android/amaze_camera/EventManager;->raiseEvent(Lcom/android/amaze_camera/Event;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    invoke-direct/range {p0 .. p0}, Lcom/android/amaze_camera/CameraThread;->releaseMediaRecorder()V
+
+    const/4 v4, 0x0
+
+    move-object/from16 v0, p0
+
+    move v1, v4
+
+    invoke-virtual {v0, v1}, Lcom/android/amaze_camera/CameraThread;->setRecPowerWarning(Z)V
+
+    const-string v4, "CameraThread"
+
+    const-string v5, "stop_video_recording_delay end"
+
+    invoke-static {v4, v5}, Lcom/android/amaze_camera/LOG;->V(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :catch_0
+    move-exception v4
+
+    move-object/from16 v18, v4
+
+    const-string v4, "CameraThread"
+
+    const-string v5, "stop_video_recording(), create uri failed!!"
+
+    move-object v0, v4
+
+    move-object v1, v5
+
+    move-object/from16 v2, v18
+
+    invoke-static {v0, v1, v2}, Lcom/android/amaze_camera/LOG;->E(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/amaze_camera/CameraThread;->m_EventManager:Lcom/android/amaze_camera/EventManager;
+
+    move-object v4, v0
+
+    new-instance v5, Lcom/android/amaze_camera/MediaSaveFailedEvent;
+
+    const-string v6, "Media.SaveFailed"
+
+    const/4 v7, 0x0
+
+    move-object v0, v5
+
+    move-object v1, v6
+
+    move v2, v7
+
+    move-object/from16 v3, v18
+
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/amaze_camera/MediaSaveFailedEvent;-><init>(Ljava/lang/String;ILjava/lang/Throwable;)V
+
+    invoke-virtual {v4, v5}, Lcom/android/amaze_camera/EventManager;->raiseEvent(Lcom/android/amaze_camera/Event;)V
+
+    goto :goto_0
+.end method

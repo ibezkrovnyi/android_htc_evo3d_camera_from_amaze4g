@@ -163,6 +163,7 @@
     <string name="pref_video_format_h264">H.264</string>
     <string name="pref_video_format_h263">H.263</string>
     <string name="pref_video_format_mpeg4">MPEG4</string>
+    <string name="pref_video_format_title">Codec</string>
     <string name="pref_recording_limit_250kb">250 KB</string>
     <string name="pref_recording_limit_1mb">1 MB</string>
     <string name="pref_recording_limit_2mb">2 MB</string>

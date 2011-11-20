@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="htc_private_app">Amaze Kamera</string>
     <string name="camcorder_name">Amaze Videooptager</string>
@@ -265,4 +265,5 @@
     <string name="how_to_start_panorama_ds_right">Tryk på knappen Optag, og panorer mod højre</string>
     <string name="how_to_start_panorama_ds_up">Tryk på knappen Optag, og panorer opad</string>
     <string name="how_to_start_panorama_ds_down">Tryk på knappen Optag, og panorer nedad</string>
+    <string name="pref_video_format_title">Codec</string>
 </resources>

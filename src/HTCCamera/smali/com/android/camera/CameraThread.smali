@@ -10696,6 +10696,9 @@
 
     iget v0, v0, Lcom/android/camera/CameraThread;->mEncoderType:I
 
+invoke-direct/range {p0 .. p0}, Lcom/android/camera/CameraThread;->getVideoEncoder()I
+move-result v0
+
     move/from16 v16, v0
 
     invoke-virtual/range {v15 .. v16}, Landroid/media/MediaRecorder;->setVideoEncoder(I)V

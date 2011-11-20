@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="pref_video_format_title">Codec</string>
     <string name="htc_private_app">Amaze Kamera</string>
     <string name="camcorder_name">Amaze Camcorder</string>
     <string name="snapbooth_name">Amaze Snapbooth</string>

@@ -1079,10 +1079,11 @@
 
     const v0, 0x11170
 
-    const/16 v4, 0x780
+    const/16 v4, 0x3c0
 
     if-lt v3, v4, :cond_2
-
+    
+    :cond_177
     const v0, 0x989680
 
     :try_start_0

@@ -147,11 +147,11 @@
         <item>2faces</item>
     </string-array>
     <array name="pref_video_format_choices">
-        <item>@string/pref_video_format_h263</item>
+        <item>@string/pref_video_format_h264</item>
         <item>@string/pref_video_format_mpeg4</item>
     </array>
     <string-array name="pref_video_format_values">
-        <item>h263</item>
+        <item>h264</item>
         <item>mpeg4</item>
     </string-array>
     <array name="pref_recording_limit_choices">
@@ -285,6 +285,9 @@
         <item>main_memory</item>
     </string-array>
     <string-array name="pref_bitrate_choices">
+        <item>1mbps</item>
+        <item>2mbps</item>
+        <item>4mbps</item>
         <item>8mbps</item>
         <item>10mbps</item>
         <item>12mbps</item>
@@ -294,6 +297,9 @@
         <item>20mbps</item>
     </string-array>
     <string-array name="pref_bitrate_values">
+        <item>1000000</item>
+        <item>2000000</item>
+        <item>4000000</item>
         <item>8000000</item>
         <item>10000000</item>
         <item>12000000</item>

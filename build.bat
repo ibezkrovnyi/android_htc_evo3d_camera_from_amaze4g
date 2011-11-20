@@ -1,6 +1,6 @@
 @echo off
 
-set VERSION=0.09
+set VERSION=0.10
 
 set ROOT_DIR=%CD%
 set SRC_DIR=%ROOT_DIR%\src

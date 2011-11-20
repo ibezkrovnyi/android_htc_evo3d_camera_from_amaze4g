@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="htc_private_app">Amaze الكاميرا</string>
     <string name="camcorder_name">Amaze كاميرا فيديو</string>
@@ -279,4 +279,5 @@
     <string name="done_btn_label">تم</string>
     <string name="demo_btn_label">عينة مقطع فيديو</string>
     <string name="camera_tutorial_item">البرنامج التعليمي</string>
+    <string name="pref_video_format_title">Codec</string>
 </resources>

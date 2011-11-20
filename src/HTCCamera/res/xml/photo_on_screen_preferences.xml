@@ -10,6 +10,7 @@
         <ListPreference android:entries="@array/pref_effect_choices" android:title="@string/effect" android:key="pref_camera_effect" android:defaultValue="none" android:dialogTitle="@string/effect" android:entryValues="@array/pref_effect_values" />
         <com.android.camera.widget.CustomPreference android:title="@string/image_adjustment" android:key="pref_camera_image_property" />
         <ListPreference android:title="@string/white_balance" android:key="pref_set_white_balance" android:dialogTitle="@string/white_balance" />
+        <ListPreference android:entries="@array/pref_flicker_choices" android:title="@string/flicker_adjustment" android:key="pref_flicker_adjustment" android:defaultValue="auto" android:dialogTitle="@string/flicker_adjustment" android:entryValues="@array/pref_flicker_values" />
         <ListPreference android:entries="@array/pref_iso_choices" android:title="@string/iso" android:key="pref_camera_iso" android:defaultValue="auto" android:dialogTitle="@string/iso" android:entryValues="@array/pref_iso_values" />
         <ListPreference android:title="@string/resolution" android:key="pref_set_resolution" android:dialogTitle="@string/resolution" />
         <ListPreference android:entries="@array/pref_review_duration_choices" android:title="@string/review_duration" android:key="pref_camera_review_duration" android:defaultValue="3s" android:dialogTitle="@string/review_duration" android:entryValues="@array/pref_review_duration_values" />
