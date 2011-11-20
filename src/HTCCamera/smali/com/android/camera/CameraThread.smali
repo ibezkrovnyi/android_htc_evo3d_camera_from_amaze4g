@@ -1850,6 +1850,21 @@
 .method private getVideoEncoder()I
     .locals 4
 
+    invoke-virtual {p0}, Lcom/android/camera/CameraThread;->is3DMode()Z
+
+    move-result v3
+
+    if-eqz v3, :not_3d_mode
+
+    iget-boolean v3, p0, Lcom/android/camera/CameraThread;->bSwitchCamera:Z
+
+    if-nez v3, :not_3d_mode
+
+    const/4 v0, 0x2
+    goto :goto_0
+
+:not_3d_mode
+
     const/4 v0, 0x0
 
     iget-object v2, p0, Lcom/android/camera/CameraThread;->mCameraActivity:Lcom/android/camera/HTCCamera;
