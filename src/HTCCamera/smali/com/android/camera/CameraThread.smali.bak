@@ -1064,13 +1064,6 @@
     :cond_0
     iget-object v3, p0, Lcom/android/camera/CameraThread;->mCamController:Lcom/android/camera/CameraController;
 
-    iget-object v1, p0, Lcom/android/camera/CameraThread;->mCameraActivity:Lcom/android/camera/HTCCamera;
-    const-string v2, "pref_camera_flash_mode"
-    invoke-static/range {v1 .. v2}, Lcom/android/camera/HTCCameraAdvanceSetting;->getPrefenceValue(Landroid/app/Activity;Ljava/lang/String;)Ljava/lang/String;
-    move-result-object v8
-
-    invoke-virtual {v3, v8}, Lcom/android/camera/CameraController;->setFlashModeIgor(Ljava/lang/String;)V
-
     iget v4, p0, Lcom/android/camera/CameraThread;->mJPEGQuality:I
 
     invoke-virtual {v3, v4}, Lcom/android/camera/CameraController;->setJpegQuality(I)V
